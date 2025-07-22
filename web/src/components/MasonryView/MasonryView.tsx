@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
+
 import { Memo } from "@/types/proto/api/v1/memo_service";
+import { cn } from "@/lib/utils";
 
 interface Props {
   memoList: Memo[];
@@ -160,7 +161,7 @@ const MasonryView = (props: Props) => {
       }}
     >
       {Array.from({ length: columns }).map((_, columnIndex) => (
-        <div key={columnIndex} className="min-w-0 mx-auto w-full max-w-2xl">
+        <div key={columnIndex} className="post-wrapper min-w-0 mx-auto w-full max-w-2xl">
           {/* Prefix element (like memo editor) goes in first column */}
           {props.prefixElement && columnIndex === 0 && <div ref={prefixElementRef}>{props.prefixElement}</div>}
 

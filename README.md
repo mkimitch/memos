@@ -184,6 +184,38 @@ The development servers will be available at:
 - Backend API: `http://localhost:8081`
 - Frontend: `http://localhost:3001`
 
+### Custom Development Script
+
+#### Development Script
+
+```shell
+chmod +x dev.sh
+```
+
+#### Interleaved, colored logs in one window
+
+```shell
+./dev.sh
+```
+
+#### Same, but no color
+
+```shell
+./dev.sh --no-color
+```
+
+#### In tmux panes (side-by-side)
+
+```shell
+./dev.sh --tmux
+```
+
+#### In tmux panes (stacked vertically) with custom session name
+
+```shell
+./dev.sh --tmux --vertical --session memos-dev
+```
+
 ## Contributing
 
 Memos is an open-source project that welcomes contributions from developers, designers, and users worldwide. We maintain a collaborative and inclusive development environment that values quality, innovation, and community feedback.
